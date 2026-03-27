@@ -11,13 +11,14 @@ local p = {
     orange       = "#f37b25",
     purple       = "#a945ff",
     teal         = "#367588",
+    red          = "#fb0905",
 }
 
 return {
     normal = {
-        a = { bg = p.black, fg = p.blue, gui = "bold" },
+        a = { bg = p.black, fg = p.purple, gui = "bold" },
         b = { bg = p.black, fg = p.white },
-        c = { bg = p.dark_grey, fg = p.orange }
+        c = { bg = p.dark_grey, fg = p.purple }
     },
     insert = {
         a = { bg = p.black, fg = p.green, gui = "bold" },
@@ -30,7 +31,7 @@ return {
         c = { bg = p.dark_grey, fg = p.black }
     },
     replace = {
-        a = { bg = p.black, fg = p.orange, gui = "bold" },
+        a = { bg = p.black, fg = p.red, gui = "bold" },
         b = { bg = p.black, fg = p.white },
         c = { bg = p.dark_grey, fg = p.white }
     },

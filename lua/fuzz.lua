@@ -23,7 +23,7 @@ fuzz.color_groups = function(p)
     return {
         -- basics
         Conceal                               = { fg = p.white, },
-        Comment                               = { fg = p.teal, italic = true },
+        Comment                               = { fg = p.light_grey, italic = true },
         Constant                              = { fg = p.blue },
         Cursor                                = { fg = p.black, bg = p.blue },
         CursorColumn                          = { fg = p.white, bg = p.dark_grey },
@@ -79,7 +79,7 @@ fuzz.color_groups = function(p)
         Statement                             = { fg = p.purple, bold = true },
         StatusLine                            = { fg = p.white, bg = p.dark_grey },
         StatusLineNC                          = { fg = p.dark_grey, bg = p.white },
-        String                                = { fg = p.orange },
+        String                                = { fg = p.teal },
         TabLine                               = { fg = p.white, bg = p.dark_grey },
         TabLineFill                           = { fg = p.black, bg = p.white },
         TabLineSel                            = { fg = p.white, },
@@ -144,7 +144,7 @@ fuzz.color_groups = function(p)
         TelescopePreviewMatch                 = { bg = p.dark_grey },
         TelescopePromptBorder                 = { fg = p.purple },
         TelescopePromptTitle                  = { fg = p.orange },
-        TelescopeResultsComment               = { fg = p.purple },
+        TelescopeResultsComment               = { fg = p.light_grey },
         TelescopeSelection                    = { bg = p.dark_grey },
         TelescopeTitle                        = { fg = p.orange },
 
@@ -165,7 +165,7 @@ fuzz.color_groups = function(p)
         ["@module"]                           = { fg = p.white },
         ["@punctuation.bracket"]              = { fg = p.green, bold = true },
         ["@punctuation.delimiter"]            = { fg = p.orange },
-        ["@string.special.url"]               = { fg = p.orange, underline = true, italic = true },
+        ["@string.special.url"]               = { fg = p.teal, underline = true, italic = true },
         ["@tag"]                              = { fg = p.orange },
         ["@tag.builtin"]                      = { link = "@tag" },
         ["@tag.attribute"]                    = { fg = p.orange },
@@ -183,11 +183,19 @@ fuzz.color_groups = function(p)
         ["@org.tag.org"]                      = { fg = p.teal, bold = true },
 
         -- LaTeX
+        texStyleItal                          = { fg = p.teal, italic = true },
         ["@function.latex"]                   = { fg = p.orange, bold = true },
-        ["@markup.italic.latex"]              = { fg = p.orange, italic = true },
         ["@module.latex"]                     = { fg = p.orange },
         ["@punctuation.bracket.latex"]        = { fg = p.blue },
         ["@variable.parameter.latex"]         = { fg = p.blue },
+
+        -- Markdown
+        markdownH1                            = { fg = p.purple, bold = true },
+        markdownH1Delimiter                   = { fg = p.purple, bold = true },
+        markdownH2                            = { fg = p.orange, bold = true },
+        markdownH2Delimiter                   = { fg = p.orange, bold = true },
+        markdownH3                            = { fg = p.green, bold = true },
+        markdownH3Delimiter                   = { fg = p.green, bold = true },
 
         -- Elixir
         ["@string.special.symbol.elixir"]     = { fg = p.blue },
@@ -211,8 +219,16 @@ fuzz.color_groups = function(p)
         ["@function.builtin.python"]          = { fg = p.blue },
 
         -- Rust
+        ["@lsp.type.decorator"]               = { fg = p.white, bold = true },
+        ["@lsp.type.escapeSequence.rust"]     = { fg = p.orange, bold = true },
         ["@lsp.type.formatSpecifier.rust"]    = { fg = p.blue, bold = true },
-        ["@lsp.type.escapeSequence.rust"]     = { fg = p.orange, bold = true }
+        ["@lsp.type.enum.rust"]               = { fg = p.purple },
+        ["@lsp.type.struct.rust"]             = { fg = p.purple },
+
+        -- TODO comments
+        -- TODO: complete the TODO comments
+        TodoBgTODO                            = { bg = p.purple, fg = p.black },
+        TodoFgTODO                            = { fg = p.purple },
     }
 end
 
