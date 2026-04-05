@@ -217,6 +217,7 @@ fuzz.color_groups = function(p)
         ["@constant.builtin.python"]          = { fg = p.blue },
         ["@constructor.python"]               = { fg = p.blue },
         ["@function.builtin.python"]          = { fg = p.blue },
+        pythonAttribute                       = { fg = p.purple },
 
         -- Rust
         ["@lsp.type.decorator"]               = { fg = p.white, bold = true },
