@@ -184,6 +184,7 @@ fuzz.color_groups = function(p)
 
         -- LaTeX
         texStyleItal                          = { fg = p.teal, italic = true },
+        texFilesArg                           = { fg = p.orange, bold = true },
         ["@function.latex"]                   = { fg = p.orange, bold = true },
         ["@module.latex"]                     = { fg = p.orange },
         ["@punctuation.bracket.latex"]        = { fg = p.blue },
