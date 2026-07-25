@@ -191,9 +191,9 @@ fuzz.color_groups = function(p)
         ["@variable.parameter.latex"]         = { fg = p.blue },
 
         -- Markdown
-        ["@markdown.heading.1.markdown"]      = { fg = p.purple, bold = true },
-        ["@markdown.heading.2.markdown"]      = { fg = p.orange, bold = true },
-        ["@markdown.heading.3.markdown"]      = { fg = p.green, bold = true },
+        ["@markup.heading.1.markdown"]        = { fg = p.purple, bold = true },
+        ["@markup.heading.2.markdown"]        = { fg = p.orange, bold = true },
+        ["@markup.heading.3.markdown"]        = { fg = p.green, bold = true },
 
         -- Elixir
         ["@string.special.symbol.elixir"]     = { fg = p.blue },
