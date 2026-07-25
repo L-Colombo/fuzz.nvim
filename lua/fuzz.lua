@@ -194,6 +194,7 @@ fuzz.color_groups = function(p)
         ["@markup.heading.1.markdown"]        = { fg = p.purple, bold = true },
         ["@markup.heading.2.markdown"]        = { fg = p.orange, bold = true },
         ["@markup.heading.3.markdown"]        = { fg = p.green, bold = true },
+        ["@markup.list.markdown"]             = { fg = p.green, bold = true },
 
         -- Elixir
         ["@string.special.symbol.elixir"]     = { fg = p.blue },
